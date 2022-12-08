@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, 
+body {
+  font-size: 18px;
+  background-color: #3a93ec;
+}
+
+h1, .how-are{
+  max-width: 940px;
+  font-size: 2.5em;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 40px 0;
+  animation-name: saltar;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes saltar {
+  /* La letra se mueve hacia arriba */
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  /* La letra se mueve hacia abajo y vuelve a su posición original */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor-principal {
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
